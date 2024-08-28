@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-box input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+}
+
+.remember input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.remember a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #4e54c8;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #4e54c8;
+    color: #fff;
+}
+
+.register {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.register a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .input-box input,
+    .btn {
+        padding: 12px;
+    }
+}
